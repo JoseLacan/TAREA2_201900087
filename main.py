@@ -24,6 +24,8 @@ class ListaDobleC:
             nuevo.anterior=self.ultimo
             self.ultimo.siguiente=nuevo
         self.ultimo=nuevo
+        self.ultimo.siguiente=self.primero
+        self.primero.anterior=self.ultimo
 
     def imprimir(self):
         print("Elementos de la lista:")
